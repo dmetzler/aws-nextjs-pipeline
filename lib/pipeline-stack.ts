@@ -22,6 +22,7 @@ export class PipelineStack extends cdk.Stack {
                 ],
                 commands: [
                     'npm ci',
+                    'build-app.sh',
                     'npm run build',
                     'npx cdk synth'
                 ]
