@@ -9,7 +9,7 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "postinstall": "cd app && npm ci && npm run build"
+    "postinstall": "cd app && npm ci --unsafe-perm && npm run build --unsafe-perm"
   },
   "devDependencies": {
     "@types/jest": "^29.2.3",
