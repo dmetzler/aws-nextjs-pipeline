@@ -2,5 +2,5 @@
 
 pushd app
 npm ci
-npm build
+npm run build
 popd
