@@ -7,5 +7,6 @@ export class NextsJsDeployPipelineStage extends Stage {
         super(scope, id, props);
 
         new AwsNextjsPipelineStack(this, 'NextJsSite');
+        
     }
 }
