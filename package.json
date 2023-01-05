@@ -8,7 +8,8 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "postinstall": "cd app && npm ci && npm run build"
   },
   "devDependencies": {
     "@types/jest": "^29.2.3",
