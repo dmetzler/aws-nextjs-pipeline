@@ -29,7 +29,6 @@ export class PipelineStack extends cdk.Stack {
             }
             )
         });
-
         
         const deploy = new NextsJsDeployPipelineStage(this, 'Deploy')
         const deployStage = pipeline.addStage(deploy)
