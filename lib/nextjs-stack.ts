@@ -15,7 +15,7 @@ import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 
 const path = require('node:path');
 
-export class AwsNextjsPipelineStack extends Stack {
+export class NextjsStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 

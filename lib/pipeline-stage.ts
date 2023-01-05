@@ -1,4 +1,4 @@
-import { AwsNextjsPipelineStack } from './nextjs-stack';
+import { NextjsStack } from './nextjs-stack';
 import { Stage, StageProps } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 
@@ -6,7 +6,7 @@ export class NextsJsDeployPipelineStage extends Stage {
     constructor(scope: Construct, id: string, props?: StageProps) {
         super(scope, id, props);
 
-        new AwsNextjsPipelineStack(this, 'NextJsSite');
-        
+        new NextjsStack(this, 'NextJsSite');
+
     }
 }
